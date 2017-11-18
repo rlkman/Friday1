@@ -10,7 +10,7 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sum(a,b){ //eslint-disable-line
   //alert('The sum of ' + a + ' and ' + b + ' is ' + (a + b) +'.');
-  return [(a + b), 'The sum of '+ a + ' and ' + b +' is ' + (a + b) + '.'];
+  return [(a + b), 'The sum of ' + a + ' and ' + b + ' is ' + (a + b) + '.'];
 
 }
 
@@ -29,7 +29,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a,b){ //eslint-disable-line
-  return [(a * b), 'The product of '+ a + ' and ' + b +' is ' + (a * b) + '.'];
+  return [(a * b), 'The product of ' + a + ' and ' + b + ' is ' + (a * b) + '.'];
 
 }
 
@@ -55,9 +55,9 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
   var f = sum(e[0], c);
 
   var g = multiply(a, b);
-  var h = multiply(g[0], c)
+  var h = multiply(g[0], c);
 
-  return [f[0], h[0], a + ' and ' + b + ' and ' + c + ' sum to ' + f[0]  + '.','The product of '+ a + ' and ' + b + ' and ' + c + ' is ' + h[0] + '.'];
+  return [f[0], h[0], a + ' and ' + b + ' and ' + c + ' sum to ' + f[0] + '.','The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + h[0] + '.'];
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -84,7 +84,7 @@ function sumArray(testArray){ //eslint-disable-line
   var i = sum(testArray[0],testArray[1]);
   var j = sum(i[0], testArray[2]);
   //console.log('sum: ', j[0])
-  return [j[0], testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + j[0] + ' is their sum.']
+  return [j[0], testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + j[0] + ' is their sum.'];
 
 }
 
@@ -107,13 +107,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-  console.log(testArray)
+  console.log(testArray);
   console.log('im here',testArray[0], testArray[1], testArray[2]);
   var q = multiply(testArray[0],testArray[1]);
   var l = multiply(q[0], testArray[2]);
-  console.log('multiply: ', l[0])
+  console.log('multiply: ', l[0]);
   console.log('The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + l[0] + '.');
-  return [l[0],'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + l[0] + '.']
+  return [l[0],'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + l[0] + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
